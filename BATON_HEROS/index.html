@@ -1,0 +1,75 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HÉROS DU BATON</title>
+    <link rel="shortcut icon" href="img/icon/Nicon.png" type="image/x-icon">
+</head>
+
+<body class="w-[100%] h-[100%] overflow-x-hidden fixed bg-cover bg-no-repeat bg-fixed">
+    <!-- Affichage du nom du créateur du code avec un lien vers son profil LinkedIn -->
+    <h1 class="fixed z-[100] bottom-0 left-0 hidden lg:flex">
+        <a href="https://github.com/Younes602" style="color:white;">Créé par Ajyad Younes</a>
+		<a href="https://github.com/Younes602"><img src="img/icon/profile.jpg" class="profile"/></a>	
+    </h1>
+    <div class="gaa w-full h-full absolute flex justify-center items-center">
+        <div
+            class="score w-[90px] h-[50px] bg-black opacity-80 absolute top-[30px] rounded-[10px] flex justify-center items-center hidden">
+            <h2 class="text-[40px] text-white">0</h2>
+        </div>
+        <!-- Bouton pour redémarrer le jeu -->
+        <div
+            class="clkTest w-[100px] lg:w-[150px] h-[100px] lg:h-[150px] bg-red-600 text-[20px] lg:text-[30px] text-white rounded-[100%] cursor-pointer  justify-center items-center hidden">
+            <h5 class="text-center">REJOUER</h5>
+        </div>
+
+        <div class="w-full h-full menue absolute z-[90] flex flex-col justify-start items-center ">
+            <div class="my-[20px] ">
+                <h1 class="text-[80px] lg:text-[100px] font-bold leading-[80px]">BATON</h1>
+                <h1 class="text-[60px] lg:text-[90px]  font-bold text-center leading-[80px]">HÉROS</h1>
+            </div>
+            <!-- Bouton pour commencer le jeu -->
+            <h2
+                class="play w-[100px] lg:w-[150px] h-[100px] lg:h-[150px] bg-red-600 cursor-pointer  rounded-[100%] text-center leading-[100px] lg:leading-[150px] text-[30px] lg:text-[40px] text-white ">
+                JOUER</h2>
+
+            <div class="property flex justify-center mt-[20px] ">
+                <ul class="aly flex justify-center ">
+                    <!-- Sélection du personnage -->
+                    <li id="char"
+                        class=" w-[40px] h-[40px] mx-[5px]  rounded-[100%] bg-white flex justify-center cursor-pointer ">
+                        <div
+                            class="w-[250px] lg:w-[300px] cont hero h-auto bg-[#FDECB8]  absolute flex justify-center flex-wrap rounded-[10px] hidden ">
+                            <div
+                                class="w-full h-[40px] bg-[#D4F6DD] relative top-0 left-0 flex items-center rounded-t-[10px]">
+                                <h4 class="text-back text-[20px] font-bold mx-[5px]">HÉROS</h4>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="clk">
+        <div class="relative sm:left-[0%] lg:left-[40%]">
+            <!-- Zone de jeu principale -->
+            <div class="w-[90000px] main h-[100vh] relative right-[0px] items-end flex duration-500 overflow-x-auto">
+                <!-- Animation du personnage -->
+                <div class="ball bg-cover bg-no-repeat absolute bottom-[50%] left-[15px] z-50 duration-500">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="script1.js"></script>
+<script src="script2.js"></script>
+<audio src="SOUND.mp3" id="SOUND"></audio>  
+
+</html>
